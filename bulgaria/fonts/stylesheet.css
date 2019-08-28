@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Natasha';
+    src: url('Natasha.eot');
+    src: url('Natasha.eot?#iefix') format('embedded-opentype'),
+        url('Natasha.woff2') format('woff2'),
+        url('Natasha.woff') format('woff'),
+        url('Natasha.svg#Natasha') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
