@@ -7927,10 +7927,6 @@ html {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  .navbar .navbar #navbar-main {
-    position: relative;
-    z-index: 2;
-  }
   .navbar .search {
     float: none !important;
     display: inline-block;
@@ -8271,6 +8267,11 @@ html {
 }
 .footer .copyright {
   font-size: 12px;
+}
+
+.article__img {
+  position: relative;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */
