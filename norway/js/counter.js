@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let counter = new Counter('counter', 1);
+    let counter = new Counter('counter', 27);
     counter.start();
 });
 class Counter {
