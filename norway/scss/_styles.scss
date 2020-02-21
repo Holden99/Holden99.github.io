@@ -39,8 +39,6 @@ html {
     
     #navbar-main {
         background-color: #141517;
-        position: relative;
-        z-index: 2;
     }
     
     .nav {
@@ -61,6 +59,10 @@ html {
         
     }
     @media screen and (max-width: 768px) {
+        .navbar #navbar-main {
+            position: relative;
+            z-index: 2;
+        }
         .search {
             float: none !important;
             display: inline-block;
