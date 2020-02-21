@@ -7914,8 +7914,6 @@ html {
 }
 .navbar #navbar-main {
   background-color: #141517;
-  position: relative;
-  z-index: 2;
 }
 .navbar .nav__item {
   display: flex !important;
@@ -7929,6 +7927,10 @@ html {
   position: relative;
 }
 @media screen and (max-width: 768px) {
+  .navbar .navbar #navbar-main {
+    position: relative;
+    z-index: 2;
+  }
   .navbar .search {
     float: none !important;
     display: inline-block;
