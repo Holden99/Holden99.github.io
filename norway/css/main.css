@@ -7914,6 +7914,8 @@ html {
 }
 .navbar #navbar-main {
   background-color: #141517;
+  position: relative;
+  z-index: 2;
 }
 .navbar .nav__item {
   display: flex !important;
