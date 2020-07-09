@@ -1,0 +1,310 @@
+html {
+    font-size: 14px;
+}
+
+.navbar {
+    height: 55px;
+    background-color: $blue;
+    color: #000;
+
+    &__header {
+        @extend .navbar-header;
+    }
+
+    .nav li a{
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .navbar-toggle {
+        border: 1px solid white;
+        span {
+            background-color: #fff;
+        }
+    }
+
+    #navbar-main {
+        background-color: $blue ; //5b85e7
+        //display: flex !important;
+        //justify-content: space-between;
+    }
+
+    .nav {
+        &__item {
+            //display: flex !important;
+        }
+        li {
+            position: relative;
+
+        }
+
+        &-cont {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 845px) {
+        .nav {
+            &-cont {
+                justify-content: flex-start;
+            }
+        }
+        //#navbar-main {
+        //    justify-content: flex-start;
+        //}
+    }
+
+
+}
+
+.first {
+    &-page {
+        .container {
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 100%;
+                //padding: 70px 0;
+                margin: 170px 0;
+            }
+        }
+
+    }
+}
+
+.introducing {
+    background-color: #0EA4C7;
+    color: #fff;
+    display: flex;
+
+    .container {
+        @include container;
+    }
+
+}
+.header {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    //display: flex;
+    //justify-content: center;
+}
+
+.text {
+    max-width: 60%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.study {
+    color: $blue;
+    padding-bottom: 30px;
+    &__header {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        @include container;
+    }
+
+    .carousel-caption, .carousel-indicators {
+        bottom: -5px;
+}
+    .slider {
+        .item {
+            max-width: 500px;
+            max-height: 280px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,.4);
+                z-index: 2;
+            }
+
+            h3 {
+                //font-size: 18px;
+            }
+        }
+    }
+}
+
+.personality {
+    background-color: $blue ;
+    padding-bottom: 30px;
+
+
+    &__header {
+        margin-bottom: 30px;
+    }
+    .container {
+        @include container;
+
+
+
+        .slider {
+            .item {
+                max-width: 500px;
+                max-height: 650px;
+            }
+        }
+    }
+}
+
+.motivation {
+    color: $blue;
+
+    .container {
+        @include container;
+    }
+
+}
+
+.video {
+    background-color: $blue;
+    padding-bottom: 30px;
+    .container {
+        @include container;
+    }
+    &__header {
+        margin-bottom: 30px;
+    }
+    video {
+        max-width: 85%;
+        max-height: 500px;
+    }
+}
+
+.references {
+    img {
+        width: 25px;
+        height: 25px;
+    }
+    background-color: $blue ;
+    padding-bottom: 30px;
+    a{
+        color: #fff;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        a {
+            font-size: 20px;
+        }
+    }
+    .container {
+        //@include container;
+    }
+
+    &__list {
+        //display: flex;
+        //justify-content: space-between;
+
+    }
+}
+
+.works {
+    color: $blue;
+    padding-bottom: 30px;
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__item {
+        a {
+            color: $blue;
+            font-size: 20px;
+        }
+    }
+    .container {
+        //@include container;
+    }
+}
+footer {
+
+    .container{
+        p {
+            color: $blue;
+            margin: 20px 0;
+            text-align: center;
+        }
+    }
+
+}
+@media screen and (max-width: 988px) {
+    .references {
+        &__list {
+            flex-direction: column;
+        }
+    }
+
+    .text {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .study {
+        .slider {
+            .item {
+                max-height: 210px;
+            }
+
+        }
+    }
+    .header {
+    text-align: center;
+}
+    .personality {
+        .slider {
+            .item {
+                max-height: 550px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .study {
+        .slider {
+            .item {
+                max-height: 160px;
+            }
+
+        }
+    }
+    .references {
+        &__item {
+            a {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .personality {
+        .slider {
+            .item {
+                max-height: 385px !important;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,20 @@
+@import '_reset.scss';
+@import '_normilize.scss';
+
+// bootstrap
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_glyphicons.scss";
+ @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+
+@import 'bootstrap-override';
+
+@import "./../node_modules/sass-autoprefixer/scss/prefixes";
+
+@import "typography.scss";
+@import "mixins.scss";
+@import "colors.scss";
+@import '_styles.scss';
